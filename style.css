@@ -52,3 +52,16 @@ p {
 }
 
 /* Add your custom styles for btn-1, btn-2, and btn-3 */
+
+.btn-1 {
+    background: black;
+    color: white;
+    transition: transform 1s;
+}
+
+.btn-1:hover {
+    background: rgb(63, 57, 57);
+    color: white;
+    transform: translateY(-10px);
+}
+
