@@ -56,39 +56,64 @@ p {
 .btn-1 {
     background: black;
     color: white;
+    border: none;
+    border-radius: 40px;
     transition: transform 1s;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      
+    animation: slideinleft 1s ease-in 0s 1;  
 }
 
 .btn-1:hover {
     background: rgb(63, 57, 57);
     color: white;
     transform: translateY(-10px);
-    font-size: 15px;
+    font-size: 17px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .btn-2 {
     background: red;
     color: white;
+    border: none;
+    border-radius: 40px;
     transition: transform 1s;
-    animation: rotate 1.5s ease-in 0.5s 2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: slideinright 2s ease-in 0s 1;
 }
 
 .btn-2:hover {
-    background: firebrick;
+    background: rgb(136, 11, 11);
     color: white;
     transform: translateY(-10px);
     font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
-@keyframes rotate {
-    0% {background-color: black;}
+.btn-3 {
+    background: gold;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    transition: transform 1s;
+    font-family: cursive;
+    animation: slideinleft 3s ease-in 0s 1; 
+}
 
-    50% {background-color: red;}
+.btn-3:hover {
+    background: rgb(180, 157, 28);
+    color: white;
+    transform: translateY(-10px);
+    font-family: cursive;   
+}
 
-    75% {background-color: gold;}
+@keyframes slideinleft {
+    from {transform: translateX(-300px);}
+    to {transform: translateX(0);}
+}
 
-    100% {transform: rotate(360deg);}
-}  
+@keyframes slideinright {
+    from {transform: translateX(300px);}
+    to {transform: translateX(0);}
+}
+
