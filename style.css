@@ -57,11 +57,38 @@ p {
     background: black;
     color: white;
     transition: transform 1s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      
 }
 
 .btn-1:hover {
     background: rgb(63, 57, 57);
     color: white;
     transform: translateY(-10px);
+    font-size: 15px;
 }
 
+.btn-2 {
+    background: red;
+    color: white;
+    transition: transform 1s;
+    animation: rotate 1.5s ease-in 0.5s 2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn-2:hover {
+    background: firebrick;
+    color: white;
+    transform: translateY(-10px);
+    font-size: 10px;
+}
+
+@keyframes rotate {
+    0% {background-color: black;}
+
+    50% {background-color: red;}
+
+    75% {background-color: gold;}
+
+    100% {transform: rotate(360deg);}
+}  
